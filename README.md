@@ -1,26 +1,13 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+## Tutorial for demonstrate the Firebase integration with Ionic 3 and Angular 4 and Firebase 3 and Angular Fire 
 
-## How to use this template
+1) Create a basic https://github.com/ionic-team/ionic2-app-base tempalte. 
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+2) Download and overwrite this project on app base project.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+3) just do ( npm install ) 
 
-### With the Ionic CLI:
+4) configure your firebase config with your own details in app.module.ts
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+5) ionic serve
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start mySideMenu sidemenu
-```
-
-Then, to run it, cd into `mySideMenu` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+Enjoy
