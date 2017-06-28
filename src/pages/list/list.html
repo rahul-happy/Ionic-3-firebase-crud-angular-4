@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Client Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let client of clients | async" (click)="showOptions(client.$key,client)"><strong item-left>{{ client.name }}</strong> <span item-right>{{ client.description }}</span></ion-item>
+    </ion-list>
+</ion-content>

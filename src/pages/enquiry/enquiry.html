@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enquiry</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h4 class="text-center">Client Information</h4>
+	<form (ngSubmit)="clientInfo()">
+    <ion-item>
+      <ion-label floating>Name</ion-label>
+      <ion-input type="text" [(ngModel)]="client.name" name="full_name" ></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label floating>Description</ion-label>
+      <ion-textarea [(ngModel)]="client.description" name="description"></ion-textarea>
+      </ion-item>
+    <button ion-button type="submit" block>Add Client</button>
+  </form>
+</ion-content>
